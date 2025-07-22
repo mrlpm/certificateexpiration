@@ -13,16 +13,16 @@ def sendmail(content):
     # Create the base text message.
     msg = EmailMessage()
     msg['Subject'] = "Remider of SSL"
-    msg['From'] = Address("Admin ALIGO", "admin@alimentosgourmet.com")
-    msg['To'] = (Address("Admin ALIGO", "admin@alimentosgourmet.com"),
-                 Address("Kevyn Perez", "kperez@itm.gt"))
+    msg['From'] = Address("Admin Subject", "admin@domain.ltd")
+    msg['To'] = (Address("Admin Subject", "admin@domain.ltd"),
+                 Address("sysadmin", "user@domain.ltd"))
     msg.set_content(content)
     with smtplib.SMTP('localhost') as s:
         s.send_message(msg)
 
 
 def check():
-    hostname = "mail.alimentosgourmet.com"
+    hostname = "mail.domain.ltd"
     port = 443
 
     num_days = 7
