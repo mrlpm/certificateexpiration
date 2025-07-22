@@ -3,7 +3,7 @@ python script for validate expiration date of ssl cert
 
 # Instructions for use
 
-- Get and smtp server configured.
+- Set a smtp server in localhost.
 - Clone this repository.
   ```bash
   git clone https://github.com/mrlpm/certificateexpiration.git
